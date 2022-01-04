@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  transmission:
+    image: lscr.io/linuxserver/transmission
+    container_name: transmission
+    environment:
+      - PUID=1000 # User id
+      - PGID=1000 # Group id
+      - TZ=Europe/London # Your current timezone
+    volumes:
+      - /volume1/docker/config/Transmission:/config # Change this to your docker config folder
+      - /volume1/download:/download # Change this to your download folder
+    ports:
+      - 9091:9091 # Web UI port
+      - 51413:51413 # Torrent port (TCP)
+      - 51413:51413/udp # Torrent port (UDP)
+    restart: unless-stopped # This makes sure that the application restarts when it crashes
