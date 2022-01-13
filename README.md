@@ -12,4 +12,4 @@ You can check by going to `127.0.0.1:9091` if you're on the same machine. Replac
 After you are sure that it all works, you can keep Transmission running in the background, just run `docker-compose up -d`.
 
 ## For More Information
-For a more in depth guide on how this works, you can go to [selfhosted.com](https://selfhostedheaven.com/posts/20210104-transmission-docker-compose/).
+For a more in depth guide on how this works, you can go to [selfhostedheaven.com](https://selfhostedheaven.com/posts/20210104-transmission-docker-compose/).
