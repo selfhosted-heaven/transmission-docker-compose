@@ -1,4 +1,4 @@
-# Transmission in a Docker Compose
+# Transmission in Docker Compose
 ## Introduction
 This repository contains a Docker compose file for running Transmission. It contains a sample file with some variables that can be changed to your liking.
 
